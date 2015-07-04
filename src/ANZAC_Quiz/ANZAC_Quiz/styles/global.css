@@ -28,6 +28,7 @@ h3 {
     line-height: 40px;	 
     font-size: 35px;
     margin: 0 auto;
+    font-family: 'Bookman Old Style';
 }
 /**/
 #navigation {
@@ -40,12 +41,13 @@ h3 {
 }
 #body {
     width:800px;
+    height:392px;
     float:left;
     padding:5px;
     background-size: 100%;
     background: url(../images/solder_sitting.jpg);
-    opacity:0.6;
-    filter: alpha(opacity=60);
+    opacity:0.8;
+    filter: alpha(opacity=80);
     color:white; 	 
 }
 #body img {
@@ -53,7 +55,7 @@ h3 {
     top: 0;
     width: 100%;
     height: auto;
-    opacity: 0.6;	 	 
+    opacity: 0.7;	 	 
 }
 #footer {
     background-color:#004040;
@@ -71,16 +73,22 @@ h3 {
     list-style-position: outside;
     margin:0px;
     padding: 0px;
+    color: white;
 }
 
 #questions_form li {
     padding: 12px;
     border-bottom: 1px solid #eee;
     position: relative;
+    color: white;
 }
 
 #page-wrap {
   text-align: left;
   width: 800px;
   margin: 0 auto;
+}
+
+#button {
+  color: black;
 }
