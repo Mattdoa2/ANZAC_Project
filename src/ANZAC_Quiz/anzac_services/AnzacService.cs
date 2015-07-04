@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace anzac_services
 {
@@ -20,9 +21,18 @@ namespace anzac_services
             SqlConnection conn = new SqlConnection();
             DataSet dSet = new DataSet();
             SqlDataAdapter adapt = new SqlDataAdapter();
-            SqlCommand sqlCmd = new SqlCommand("");
+            SqlCommand sqlCmd = new SqlCommand("select profile_url where civil_ocupation=BLACKSMITH");
 
-            return "www.google.com";
+            conn.ConnectionString = ConfigurationManager.ConnectionStrings["AnzacDbConnection"].ToString();
+
+            conn.Open();
+            sqlCmd.Connection = conn;
+            adapt.SelectCommand = sqlCmd;
+            adapt.Fill(dSet);
+
+            string result = dSet.Tables[0].Rows[0]["profile_url"].ToString();
+
+            return result;
         }
     }
 }
