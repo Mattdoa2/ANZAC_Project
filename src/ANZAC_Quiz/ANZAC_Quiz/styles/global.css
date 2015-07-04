@@ -22,6 +22,7 @@ h3 {
     background-color:#004040;
     color:white;
     height:50px;
+    width:800px;
     text-align:center;
     padding:5px;
     line-height: 40px;	 
@@ -39,14 +40,24 @@ h3 {
 #body {
     width:800px;
     float:left;
-    padding:10px;	 	 
+    padding:10px;
+    background-color: #cccccc;
+    background-size: 100%; 	 
+}
+#body img {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.6;	 	 
 }
 #footer {
     background-color:#004040;
     color:white;
     clear:both;
     text-align:center;
-    padding:5px;	 	 
+    padding:5px;
+    width:800px;	 	 
 }
 
 #questions_form ul {
