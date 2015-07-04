@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace anzac_services
 {
-    public class Class1
+    public class AnzacService: IAnzacService
     {
+        public string GetMessage(string name) 
+        {
+            return "www.google.com";
+        }
     }
 }
