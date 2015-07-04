@@ -6,16 +6,28 @@
 h1 {
     font-size: 20px;
     line-height: 40px;
+    font-family: 'Bookman Old Style';
+    font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
 }
 
 h2 {
     font-size: 14px;
     line-height: 40px;
+    font-family: 'Bookman Old Style';
+    font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
 }
 
 h3 {
     font-size: 13px;
     line-height: 20px;
+    font-family: 'Bookman Old Style';
+    font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
 }
 
 #header {
@@ -29,6 +41,7 @@ h3 {
     font-size: 35px;
     margin: 0 auto;
     font-family: 'Bookman Old Style';
+    font-weight: 400;
 }
 /**/
 #navigation {
@@ -48,7 +61,11 @@ h3 {
     background: url(../images/solder_sitting.jpg);
     opacity:0.8;
     filter: alpha(opacity=80);
-    color:white; 	 
+    color:white;
+    font-family: 'Bookman Old Style';
+    font-style: normal;
+	font-variant: normal;
+	font-weight: 400; 	 
 }
 #body img {
     left: 0;
@@ -64,7 +81,11 @@ h3 {
     text-align:center;
     padding:5px;
     width:800px;
-    margin: 0 auto;	 	 
+    margin: 0 auto;	 
+    font-family: 'Bookman Old Style';
+    font-style: normal;
+	font-variant: normal;
+	font-weight: 400; 	 
 }
 
 #questions_form ul {
@@ -74,6 +95,11 @@ h3 {
     margin:0px;
     padding: 0px;
     color: white;
+    font-family: 'Bookman Old Style';
+    font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+    font-size: 14px; 
 }
 
 #questions_form li {
@@ -81,6 +107,11 @@ h3 {
     border-bottom: 1px solid #eee;
     position: relative;
     color: white;
+    font-family: 'Bookman Old Style';
+    font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+    font-size: 14px; 
 }
 
 #page-wrap {
@@ -91,4 +122,16 @@ h3 {
 
 #button {
   color: black;
+  font-family: 'Bookman Old Style';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  font-size: 14px; 
+}
+
+#link{
+  text-align: center;
+  vertical-align: middle;
+  line-height: 400px;
+  font-size: 16px;   
 }
