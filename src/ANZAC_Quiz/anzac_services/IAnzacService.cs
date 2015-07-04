@@ -12,5 +12,8 @@ namespace anzac_services
     {
         [OperationContract]
         string GetMessage(string name);
+
+        [OperationContract]
+        string FindAnzac(string querystring);
     }
 }
