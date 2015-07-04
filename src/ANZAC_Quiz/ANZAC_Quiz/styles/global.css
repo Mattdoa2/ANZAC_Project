@@ -1,13 +1,15 @@
-﻿body {
+﻿body{
 }
 
-header {
+
+#header {
     background-color:black;
     color:white;
     text-align:center;
     padding:5px;	 
 }
-navigation {
+/**/
+#navigation {
     line-height:30px;
     background-color:#eeeeee;
     height:300px;
@@ -15,12 +17,12 @@ navigation {
     float:left;
     padding:5px;	      
 }
-body {
+#body {
     width:350px;
     float:left;
     padding:10px;	 	 
 }
-footer {
+#footer {
     background-color:black;
     color:white;
     clear:both;
@@ -28,7 +30,7 @@ footer {
     padding:5px;	 	 
 }
 
-.questions_form ul {
+#questions_form ul {
     width: 600px;
     list-style-type:none;
     list-style-position: outside;
@@ -36,7 +38,7 @@ footer {
     padding: 0px;
 }
 
-.questions_form li {
+#questions_form li {
     padding: 12px;
     border-bottom: 1px solid #eee;
     position: relative;
