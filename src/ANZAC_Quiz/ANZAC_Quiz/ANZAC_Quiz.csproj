@@ -70,7 +70,9 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="scripts\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
     <Content Include="questions\question1.html" />
@@ -78,6 +80,7 @@
     <Content Include="questions\question3.html" />
     <Content Include="questions\question4.html" />
     <Content Include="questions\question5.html" />
+    <Content Include="styles\global.css" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="web.config" />
