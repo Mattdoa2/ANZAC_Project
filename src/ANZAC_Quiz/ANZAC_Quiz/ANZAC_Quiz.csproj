@@ -80,6 +80,7 @@
     <Content Include="questions\question3.html" />
     <Content Include="questions\question4.html" />
     <Content Include="questions\question5.html" />
+    <Content Include="questions\results.html" />
     <Content Include="styles\global.css" />
   </ItemGroup>
   <ItemGroup>
