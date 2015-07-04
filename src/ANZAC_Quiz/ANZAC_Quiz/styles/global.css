@@ -1,12 +1,31 @@
 ﻿body{
+    text-align: center;
 }
 
 
+h1 {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+h2 {
+    font-size: 14px;
+    line-height: 40px;
+}
+
+h3 {
+    font-size: 13px;
+    line-height: 20px;
+}
+
 #header {
-    background-color:#E8E8E8;
-    color:black;
+    background-color:#004040;
+    color:white;
+    height:50px;
     text-align:center;
-    padding:5px;	 
+    padding:5px;
+    line-height: 40px;	 
+    font-size: 35px;
 }
 /**/
 #navigation {
@@ -18,7 +37,7 @@
     padding:5px;	      
 }
 #body {
-    width:350px;
+    width:800px;
     float:left;
     padding:10px;	 	 
 }
@@ -42,4 +61,10 @@
     padding: 12px;
     border-bottom: 1px solid #eee;
     position: relative;
+}
+
+#page-wrap {
+  text-align: left;
+  width: 800px;
+  margin: 0 auto;
 }
