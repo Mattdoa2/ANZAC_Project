@@ -42,8 +42,11 @@ h3 {
     width:800px;
     float:left;
     padding:5px;
-    background-color: #cccccc;
-    background-size: 100%; 	 
+    background-size: 100%;
+    background: url(../images/solder_sitting.jpg);
+    opacity:0.6;
+    filter: alpha(opacity=60);
+    color:white; 	 
 }
 #body img {
     left: 0;
