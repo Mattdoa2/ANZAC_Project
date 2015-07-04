@@ -21,7 +21,8 @@ namespace anzac_services
             SqlConnection conn = new SqlConnection();
             DataSet dSet = new DataSet();
             SqlDataAdapter adapt = new SqlDataAdapter();
-            SqlCommand sqlCmd = new SqlCommand("select PROFILE_URL from ANZAC_PROFILES where CIVIL_OCCUPATION='BLACKSMITH'");
+            SqlCommand sqlCmd = new SqlCommand("select PROFILE_URL from ANZAC_PROFILES where " + queryString);
+            //SqlCommand sqlCmd = new SqlCommand("select PROFILE_URL from ANZAC_PROFILES where CIVIL_OCCUPATION='BLACKSMITH'");
 
             conn.ConnectionString = ConfigurationManager.ConnectionStrings["AnzacDbConnection"].ToString();
 
