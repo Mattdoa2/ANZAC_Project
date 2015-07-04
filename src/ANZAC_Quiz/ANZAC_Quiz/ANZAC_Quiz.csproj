@@ -70,11 +70,23 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="questions\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="index.html" />
+    <Content Include="questions\question1.html" />
+    <Content Include="questions\question2.html" />
+    <Content Include="questions\question3.html" />
+    <Content Include="questions\question4.html" />
+    <Content Include="questions\question5.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
