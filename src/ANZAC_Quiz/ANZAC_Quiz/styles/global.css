@@ -12,4 +12,5 @@
 .questions_form li {
     padding: 12px;
     border-bottom: 1px solid #eee;
+    position: relative;
 }
