@@ -3,8 +3,8 @@
 
 
 #header {
-    background-color:black;
-    color:white;
+    background-color:#E8E8E8;
+    color:black;
     text-align:center;
     padding:5px;	 
 }
@@ -23,7 +23,7 @@
     padding:10px;	 	 
 }
 #footer {
-    background-color:black;
+    background-color:#004040;
     color:white;
     clear:both;
     text-align:center;
