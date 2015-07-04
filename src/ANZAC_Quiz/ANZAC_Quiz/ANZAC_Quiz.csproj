@@ -73,7 +73,12 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\anzac_services\anzac_services.csproj">
+      <Project>{0a7f5fe4-7145-4cd1-9d8a-9077eb8c89a9}</Project>
+      <Name>anzac_services</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
     <Content Include="questions\question1.html" />
