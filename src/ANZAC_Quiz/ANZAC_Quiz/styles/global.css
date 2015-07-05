@@ -58,7 +58,7 @@ h3 {
     float:left;
     padding:5px;
     background-size: 100%;
-    background: url('/../images/solder_sitting.jpg');
+    background: url("/../images/solder_sitting.jpg");
     opacity:0.8;
     filter: alpha(opacity=80);
     color:white;
