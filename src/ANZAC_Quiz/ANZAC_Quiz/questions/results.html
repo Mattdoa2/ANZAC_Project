@@ -13,7 +13,7 @@
             var soapMsg = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/"><soapenv:Header/><soapenv:Body><tem:FindAnzac><tem:querystring>' + sessionStorage.getItem('query') + '</tem:querystring></tem:FindAnzac></soapenv:Body></soapenv:Envelope>';
 
             $.ajax({
-                url: "http://http://whichanzacareyou.azurewebsites.net/ANZAC_Quiz/AnzacService.svc",
+                url: "http://whichanzacareyou.azurewebsites.net/ANZAC_Quiz/AnzacService.svc",
                 type: "POST",
                 dataType: "xml",
                 data: soapMsg,
