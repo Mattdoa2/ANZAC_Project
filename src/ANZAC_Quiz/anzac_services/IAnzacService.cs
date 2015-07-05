@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ServiceModel;
+using System.ServiceModel.Web;
+
 
 namespace anzac_services
 {
@@ -14,6 +16,7 @@ namespace anzac_services
         string GetMessage(string name);
 
         [OperationContract]
+        /*[WebGet(UriTemplate = "Service/FindAnzac({querystring})")]*/
         string FindAnzac(string querystring);
     }
 }

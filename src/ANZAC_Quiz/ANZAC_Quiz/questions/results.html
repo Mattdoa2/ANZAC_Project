@@ -10,17 +10,24 @@
 
         function GoToAnzac() {
 
-            var soapMsg = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/"><soapenv:Header/><soapenv:Body><tem:FindAnzac><tem:querystring>' + sessionStorage.getItem('query') + '</tem:querystring></tem:FindAnzac></soapenv:Body></soapenv:Envelope>' + sessionStorage.getItem('query') + "";
+            var soapMsg = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/"><soapenv:Header/><soapenv:Body><tem:FindAnzac><tem:querystring>' + sessionStorage.getItem('query') + '</tem:querystring></tem:FindAnzac></soapenv:Body></soapenv:Envelope>';
+
+            //COMPLEXION = 'FAIR'
 
             $.ajax({
-                url: "http://whichanzacareyou.azurewebsites.net/ANZAC_Quiz/AnzacService.svc",
+                url: "http://localhost:50611/ANZAC_Quiz/AnzacService.svc",
                 type: "POST",
                 dataType: "xml",
                 data: soapMsg,
                 processData: false,
                 contentType: "text/xml; charset=\"utf-8\"",
+                headers: {
+                    SOAPAction: 'http://tempuri.org/IAnzacService/FindAnzac'
+                },
                 success: function (data, status, xhr) {
-                    alert(xhr.responseText());
+                    var yourAnzac = $(xhr.responseXML).find('FindAnzacResult').val();
+                    alert("Your ANZAC is: " + yourAnzac);
+                    alert(xhr.responseText);
                 }
             });
 
