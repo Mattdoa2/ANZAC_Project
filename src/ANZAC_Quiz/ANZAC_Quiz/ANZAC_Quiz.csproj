@@ -80,6 +80,16 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\15526.jpg" />
+    <Content Include="images\16073.jpg" />
+    <Content Include="images\259.jpg" />
+    <Content Include="images\27657.jpg" />
+    <Content Include="images\40_crop.jpg" />
+    <Content Include="images\5132_crop.jpg" />
+    <Content Include="images\men.jpg" />
+    <Content Include="images\portrait.jpg" />
+    <Content Include="images\solder_sitting.jpg" />
+    <Content Include="images\soldier.jpg" />
     <Content Include="index.html" />
     <Content Include="questions\question1.html" />
     <Content Include="questions\question2.html" />
