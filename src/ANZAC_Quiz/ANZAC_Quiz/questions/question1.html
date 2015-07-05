@@ -8,7 +8,7 @@
         function PassForm(formElement) {            
             //var myStr = $(formElement).find("input[type='radio]:checked").val();
             var answerVal = $("input[type=radio]:checked").val();
-            alert("The value is: " + myStr);
+            alert('answer valu : ' + answerVal);
             var query = "BIRTH_PLACE = '" + answerVal + "'";
             sessionStorage.setItem('query', query);
             //window.location.href = "question2.html";
