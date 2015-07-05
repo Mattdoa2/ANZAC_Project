@@ -10,7 +10,19 @@
 
         function GoToAnzac() {
 
-            var xmlreq = "" + sessionStorage.getItem('query') + "";
+            var soapMsg = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/"><soapenv:Header/><soapenv:Body><tem:FindAnzac><tem:querystring>' + sessionStorage.getItem('query') + '</tem:querystring></tem:FindAnzac></soapenv:Body></soapenv:Envelope>' + sessionStorage.getItem('query') + "";
+
+            $.ajax({
+                url: "http://whichanzacareyou.azurewebsites.net/ANZAC_Quiz/AnzacService.svc",
+                type: "POST",
+                dataType: "xml",
+                data: soapMsg,
+                processData: false,
+                contentType: "text/xml; charset=\"utf-8\"",
+                success: function (data, status, xhr) {
+                    alert(xhr.responseText());
+                }
+            });
 
             alert('Your query is: ' + sessionStorage.getItem('query'));
         }
