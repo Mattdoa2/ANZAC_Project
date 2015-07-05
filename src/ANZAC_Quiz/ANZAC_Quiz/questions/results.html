@@ -12,8 +12,6 @@
 
             var soapMsg = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/"><soapenv:Header/><soapenv:Body><tem:FindAnzac><tem:querystring>' + sessionStorage.getItem('query') + '</tem:querystring></tem:FindAnzac></soapenv:Body></soapenv:Envelope>';
 
-            //COMPLEXION = 'FAIR'
-
             $.ajax({
                 url: "http://localhost:50611/ANZAC_Quiz/AnzacService.svc",
                 type: "POST",
@@ -25,13 +23,10 @@
                     SOAPAction: 'http://tempuri.org/IAnzacService/FindAnzac'
                 },
                 success: function (data, status, xhr) {
-                    var yourAnzac = $(xhr.responseXML).find('FindAnzacResult').val();
-                    alert("Your ANZAC is: " + yourAnzac);
-                    alert(xhr.responseText);
+                    var yourAnzac = $(xhr.responseXML).find('FindAnzacResult').text();                    
+                    window.location.href = yourAnzac;
                 }
-            });
-
-            alert('Your query is: ' + sessionStorage.getItem('query'));
+            });            
         }
     </script>
 </head>
@@ -41,7 +36,11 @@
         <div id="body">
             <div id="content">
                 <h1>If you were an ANZAC you would be...</h1>
-                Insert waiting animation!
+                <p>
+                    <h3>
+                        When you find your ANZAC you might find it fun to transcribe some other ANZACs registration documents.
+                    </h3>
+                </p>
             </div>
         </div>
         <div id="footer">Brought to you by Kathew &amp; Cashews - GovHack 2015</div>

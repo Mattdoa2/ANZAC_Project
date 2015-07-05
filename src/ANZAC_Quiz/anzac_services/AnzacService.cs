@@ -18,6 +18,7 @@ namespace anzac_services
 
         public string FindAnzac(string queryString) 
         {
+            string result = "No match for your ANZAC in our database"; 
             SqlConnection conn = new SqlConnection();
             DataSet dSet = new DataSet();
             SqlDataAdapter adapt = new SqlDataAdapter();
@@ -30,9 +31,9 @@ namespace anzac_services
             sqlCmd.Connection = conn;
             adapt.SelectCommand = sqlCmd;
             adapt.Fill(dSet);
-
-            string result = dSet.Tables[0].Rows[0]["profile_url"].ToString();
-
+            if(dSet.Tables[0].Rows.Count > 0){
+                result = dSet.Tables[0].Rows[0]["profile_url"].ToString();
+            }
             return result;
         }
     }
